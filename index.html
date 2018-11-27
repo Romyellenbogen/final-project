@@ -697,11 +697,7 @@ Highcharts.chart('box', {
         title: {
             text: 'Units sold in millions'
         },
-        labels: {
-            formatter: function () {
-              return this.value / 100;
-            }
-        }
+        max: 1600
     },
     tooltip: {
         pointFormat: '{series.name} had sold <b>{point.y:,.0f}</b><br/>units in {point.x}'
