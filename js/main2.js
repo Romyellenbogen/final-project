@@ -35,6 +35,11 @@ $('.body').hide();
     });
   })
 
+$('.trivia-song').hide();
+
+$('.trivia').on('click', event => {
+  $(event.currentTarget).next().slideToggle('.trivia-song');
+})
 
 $('.trivia-yes').click(function () {
   $(this).css({'background-color': '#469355', 'color': '#fff'})

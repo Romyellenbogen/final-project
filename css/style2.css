@@ -95,6 +95,16 @@ iframe{
   max-width: 350px;
 }
 
+footer {
+      padding: 15px;
+      color: #000;
+      font-size: .7rem;
+      justify-content: center;
+}
+
+audio{
+  padding: 10px;
+}
 
 #container {
     max-width: 800px;
