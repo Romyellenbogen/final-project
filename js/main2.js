@@ -38,7 +38,7 @@ $('.body').hide();
 $('.trivia-song').hide();
 
 $('.trivia').on('click', event => {
-  $(event.currentTarget).next().slideToggle('.trivia-song');
+  $(event.currentTarget).next().toggle('.trivia-song');
 })
 
 $('.trivia-yes').click(function () {

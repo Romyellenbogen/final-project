@@ -9,10 +9,6 @@ section {
   margin: auto;
 }
 
-img.chart-img {
-  width: 300px;
-}
-
 h1{
   font-size: 4rem;
 }
@@ -87,19 +83,22 @@ img.subculture-image{
   max-width: 370px;
 }
 
-img.subculture-image-2{
+img.subculture-image-2, iframe{
   max-width: 350px;
 }
 
-iframe{
-  max-width: 350px;
+img.chart-img {
+  width: 300px;
 }
+
 
 footer {
       padding: 15px;
       color: #000;
-      font-size: .7rem;
+      font-size: .8rem;
       justify-content: center;
+      font-family: 'Crimson Text', serif;
+
 }
 
 audio{
@@ -177,4 +176,69 @@ audio{
 
 #total60{
   grid-area: total60;
+}
+
+
+@media screen and (max-width: 875px) {
+  section {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  img.subculture-image{
+    max-width: 275px;
+  }
+
+  img.subculture-image-2, iframe{
+    max-width: 250px;
+  }
+
+  img.chart-img {
+    width: 250px;
+  }
+
+  #charts{
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-column-gap: 170px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+        "total10 total10 total00 total00"
+        "total10 total10 total00 total00"
+        "total90 total90 total80 total80"
+        "total90 total90 total80 total80"
+        "total70 total70 total60 total60"
+        "total70 total70 total60 total60"
+  }
+
+
+  #total10{
+    grid-area: total10;
+  }
+
+  #total00{
+    grid-area: total00;
+  }
+
+  #total90{
+    grid-area: total90;
+  }
+
+  #total80{
+    grid-area: total80;
+  }
+
+  #total70{
+    grid-area: total70;
+  }
+
+  #total60{
+    grid-area: total60;
+  }
+
+  button.rec-button{
+    width: 90px;
+  }
 }
