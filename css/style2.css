@@ -46,6 +46,13 @@ p.rec{
   font-style: italic;
 }
 
+.body{
+  max-width: 370px;
+  background-color: #fff9d3;
+  padding: 15px;
+  font-size: 1.1rem;
+}
+
 .chart-list{
   background-color: #fff9d3;
   padding: 15px;
@@ -71,13 +78,6 @@ button.rec-button{
   width: 125px;
 }
 
-
-.body{
-  max-width: 370px;
-  background-color: #fff9d3;
-  padding: 15px;
-  font-size: 1.1rem;
-}
 
 img.subculture-image{
   max-width: 370px;
@@ -180,28 +180,36 @@ audio{
 
 
 @media screen and (max-width: 875px) {
+
   section {
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
   }
 
   img.subculture-image{
-    max-width: 275px;
+    max-width: 315px;
   }
 
   img.subculture-image-2, iframe{
-    max-width: 250px;
+    max-width: 300px;
   }
 
   img.chart-img {
-    width: 250px;
+    width: 300px;
+  }
+
+  .body{
+    max-width: 315px;
+    background-color: #fff9d3;
+    padding: 15px;
+    font-size: 1.1rem;
   }
 
   #charts{
     max-width: 800px;
     margin: auto;
     display: grid;
-    grid-column-gap: 170px;
+    grid-column-gap: 215px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, auto);
     grid-template-areas:
@@ -239,6 +247,413 @@ audio{
   }
 
   button.rec-button{
-    width: 90px;
+    width: 100px;
   }
+}
+
+@media screen and (max-width: 745px) {
+  section {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  img.subculture-image{
+    max-width: 500px;
+  }
+
+  img.subculture-image-2, iframe{
+    max-width: 250px;
+  }
+
+  img.chart-img {
+    width: 200px;
+  }
+
+  .body{
+    max-width: 500px;
+    background-color: #fff9d3;
+    padding: 15px;
+    font-size: 1.1rem;
+  }
+
+  #container {
+      margin: auto;
+      display: grid;
+      justify-content: center;
+      grid-column-gap: 50px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas:
+          "punk"
+          "rock"
+          "motown"
+          "disco"
+  }
+
+  #punk {
+    grid-area: punk;
+  }
+
+
+  #rock{
+    grid-area: rock;
+  }
+
+  #motown {
+    grid-area: motown;
+  }
+
+  #disco {
+    grid-area: disco;
+  }
+
+
+  #charts{
+    margin: auto;
+    display: grid;
+    grid-column-gap: 150px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+        "total10 total10 total00 total00"
+        "total10 total10 total00 total00"
+        "total90 total90 total80 total80"
+        "total90 total90 total80 total80"
+        "total70 total70 total60 total60"
+        "total70 total70 total60 total60"
+  }
+
+
+  #total10{
+    grid-area: total10;
+  }
+
+  #total00{
+    grid-area: total00;
+  }
+
+  #total90{
+    grid-area: total90;
+  }
+
+  #total80{
+    grid-area: total80;
+  }
+
+  #total70{
+    grid-area: total70;
+  }
+
+  #total60{
+    grid-area: total60;
+  }
+
+  button.rec-button{
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section {
+    max-width: 450px;
+    margin: auto;
+  }
+
+  img.subculture-image{
+    max-width: 400px;
+  }
+
+  img.subculture-image-2, iframe{
+    max-width: 390px;
+  }
+
+  img.chart-img {
+    width: 300px;
+  }
+
+  .body{
+    max-width: 400px;
+    background-color: #fff9d3;
+    padding: 15px;
+    font-size: 1.1rem;
+  }
+
+  #container {
+      margin: auto;
+      display: grid;
+      justify-content: center;
+      grid-column-gap: 50px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas:
+          "punk"
+          "rock"
+          "motown"
+          "disco"
+  }
+
+  #punk {
+    grid-area: punk;
+  }
+
+
+  #rock{
+    grid-area: rock;
+  }
+
+  #motown {
+    grid-area: motown;
+  }
+
+  #disco {
+    grid-area: disco;
+  }
+
+
+  #charts{
+    margin: auto;
+    display: grid;
+    grid-column-gap: 150px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+        "total10"
+        "total00"
+        "total90"
+        "total80"
+        "total70"
+        "total60"
+  }
+
+
+  #total10{
+    grid-area: total10;
+  }
+
+  #total00{
+    grid-area: total00;
+  }
+
+  #total90{
+    grid-area: total90;
+  }
+
+  #total80{
+    grid-area: total80;
+  }
+
+  #total70{
+    grid-area: total70;
+  }
+
+  #total60{
+    grid-area: total60;
+  }
+
+  button.rec-button{
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section {
+    max-width: 375px;
+    margin: auto;
+  }
+
+  img.subculture-image{
+    max-width: 300px;
+  }
+
+  img.subculture-image-2, iframe{
+    max-width: 290px;
+  }
+
+  img.chart-img {
+    width: 250px ;
+  }
+
+  .body{
+    max-width: 300px;
+    background-color: #fff9d3;
+    padding: 15px;
+    font-size: 1.1rem;
+  }
+
+  #container {
+      margin: auto;
+      display: grid;
+      justify-content: center;
+      grid-column-gap: 50px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas:
+          "punk"
+          "rock"
+          "motown"
+          "disco"
+  }
+
+  #punk {
+    grid-area: punk;
+  }
+
+
+  #rock{
+    grid-area: rock;
+  }
+
+  #motown {
+    grid-area: motown;
+  }
+
+  #disco {
+    grid-area: disco;
+  }
+
+
+  #charts{
+    margin: auto;
+    display: grid;
+    grid-column-gap: 150px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+        "total10"
+        "total00"
+        "total90"
+        "total80"
+        "total70"
+        "total60"
+  }
+
+
+  #total10{
+    grid-area: total10;
+  }
+
+  #total00{
+    grid-area: total00;
+  }
+
+  #total90{
+    grid-area: total90;
+  }
+
+  #total80{
+    grid-area: total80;
+  }
+
+  #total70{
+    grid-area: total70;
+  }
+
+  #total60{
+    grid-area: total60;
+  }
+
+  button.rec-button{
+    width:110px;
+  }
+
+  @media screen and (max-width: 420px) {
+    section {
+      max-width: 320px;
+      margin: auto;
+    }
+
+    img.subculture-image{
+      max-width: 275px;
+    }
+
+    img.subculture-image-2, iframe{
+      max-width: 265px;
+    }
+
+    img.chart-img {
+      width: 250px ;
+    }
+
+    .body{
+      max-width: 275px;
+      background-color: #fff9d3;
+      padding: 15px;
+      font-size: 1.1rem;
+    }
+
+    #container {
+        margin: auto;
+        display: grid;
+        justify-content: center;
+        grid-column-gap: 50px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "punk"
+            "rock"
+            "motown"
+            "disco"
+    }
+
+    #punk {
+      grid-area: punk;
+    }
+
+
+    #rock{
+      grid-area: rock;
+    }
+
+    #motown {
+      grid-area: motown;
+    }
+
+    #disco {
+      grid-area: disco;
+    }
+
+
+    #charts{
+      margin: auto;
+      display: grid;
+      grid-column-gap: 150px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, auto);
+      grid-template-areas:
+          "total10"
+          "total00"
+          "total90"
+          "total80"
+          "total70"
+          "total60"
+    }
+
+
+    #total10{
+      grid-area: total10;
+    }
+
+    #total00{
+      grid-area: total00;
+    }
+
+    #total90{
+      grid-area: total90;
+    }
+
+    #total80{
+      grid-area: total80;
+    }
+
+    #total70{
+      grid-area: total70;
+    }
+
+    #total60{
+      grid-area: total60;
+    }
+
+    button.rec-button{
+      width:110px;
+    }
 }
