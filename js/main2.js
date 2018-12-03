@@ -103,4 +103,10 @@ $('#s2').click(function () {
     $(this).replaceWith($('#s3'));
 })
 
+$('#bib-text').hide();
+
+$('.bib').on('click', event => {
+  $(event.currentTarget).next().toggle('#bib-text');
+})
+
 })

@@ -37,6 +37,10 @@ p{
   font-family: 'Crimson Text', serif;
 }
 
+p.intro-text{
+  max-width: 600px;
+}
+
 p.trivia{
   font-weight: bold;
   font-size: 1.2rem;
@@ -104,6 +108,7 @@ footer {
 
 audio{
   padding: 10px;
+  max-width: 100%;
 }
 
 #container {
@@ -284,6 +289,12 @@ audio{
     padding: 15px;
     font-size: 1.1rem;
   }
+
+  audio{
+    padding: 10px;
+    max-width: 200px;
+  }
+
 
   #container {
       margin: auto;
@@ -577,7 +588,7 @@ audio{
     }
 
     img.subculture-image-2, iframe{
-      max-width: 265px;
+      max-width: 240px;
     }
 
     img.chart-img {
@@ -585,11 +596,16 @@ audio{
     }
 
     .body{
-      max-width: 275px;
+      max-width: 250px;
       background-color: #fff9d3;
       padding: 15px;
       font-size: 1.1rem;
     }
+
+    p{
+      max-width: 290px;
+    }
+
 
     #container {
         margin: auto;
