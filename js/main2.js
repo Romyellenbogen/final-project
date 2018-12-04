@@ -37,6 +37,13 @@ $('.body').hide();
 
 $('.trivia-song').hide();
 
+$('.trivia-song').click(function () {
+  $('audio').each(function(){
+      this.pause();
+      this.currentTime = 0;
+  });
+})
+
 $('.trivia').on('click', event => {
   $(event.currentTarget).next().toggle('.trivia-song');
 })
