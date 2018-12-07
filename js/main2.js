@@ -28,24 +28,24 @@ $('.body').hide();
     $(event.currentTarget).next().slideToggle('.top-ten-song');
   })
 
-  $('.top-ten-song').click(function () {
-    $('audio').each(function(){
+  $('.top-ten').on('click', function () {
+    $.each($('audio'), function(){
         this.pause();
         this.currentTime = 0;
     });
-  })
+  });
 
 $('.trivia-song').hide();
 
-$('.trivia-song').click(function () {
-  $('audio').each(function(){
-      this.pause();
-      this.currentTime = 0;
-  });
-})
-
 $('.trivia').on('click', event => {
   $(event.currentTarget).next().toggle('.trivia-song');
+})
+
+$('.trivia').click(function() {
+  $('audio').each(function() {
+    this.pause();
+    this.currentTime = 0;
+  });
 })
 
 $('.trivia-yes').click(function () {
