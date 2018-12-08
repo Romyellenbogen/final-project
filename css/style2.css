@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Geneva', 'Tahoma', sans-serif;
   background-color: #fff;
   color: #000;
 }
@@ -34,7 +34,7 @@ span{
 
 
 p{
-  font-family: 'Crimson Text', serif;
+  font-family: 'Crimson Text', 'Baskerville', 'Palatino', serif;
 }
 
 p.intro-text{
@@ -697,7 +697,7 @@ audio{
     }
 
     img.subculture-image-2, iframe.subculture-vid{
-      max-width: 300px;
+      max-width: 270px;
     }
 
     iframe.rec-vid{
@@ -709,7 +709,7 @@ audio{
     }
 
     .body{
-      max-width: 310px;
+      max-width: 280px;
       background-color: #fff9d3;
       padding: 15px;
       font-size: 1.1rem;
